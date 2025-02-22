@@ -1,21 +1,23 @@
 <!DOCTYPE html> <!--required for compatibility and rendering-->
 <html lang="en"> <!--sets default language of webpage to fr-->
 <!-- the html tag defines the start and end of your file-->
-	<head>
+	<head> <!--holds title of page-->
 		<meta charset="UTF-8">
 		<!--meta = handles metadata or your doc
 		= tells how you want to handle your characters, 
 		different languages etc
 		utf-8 = supports all characters and symbols, so it is recommended-->
 		<title>Learning HTML</title>
-	</head> <!--holds title of page-->
+	</head>
 	<body> <!--holds main part of page-->
 		<h1>Hello !</h1> <!--h = header-->
 		<p>This is a paragraph</p> <!--p = paragraph-->
 
-		<p>And there is another one,<br>
-			but this one is longer <!--=break, basically a newline -->
+		<p>And there is another one,<br><!--=break, basically a newline -->
+			but this one is longer 
 		</p>
+		<a href="#anchor">Wait! Would you like to learn about lungfish ?</a>
+		<!--setting an anchor here, so it can take you further down in the page-->
 
 		<h2>Here is a subtitle</h2>
 		<p>With less important information i guess</p>
@@ -42,8 +44,18 @@
 			<mark>it is not my problem</mark><br>
 		</p>
 
-		<!-- <h1>Part 3</h1>
-		<h2>The Lungfish</h2> -->
+		<h1>Part 3</h1>
+		<h2 id="anchor">The Lungfish and hyperlinks</h2>
+		<!--anchor takes you down here-->
+		<a href="https://en.wikipedia.org/wiki/Lungfish"> 
+			<!--a = anchor, meaning we re about to redirect the content you click on to another place
+			href is the place you will be redirected to-->
+			Lungfish wikipedia page
+		</a>
+		<br>
+		<a href="about.html">
+			About Mr Lungfish
+		</a>
 
 	</body>
 </html> <!--end of file here-->
